@@ -1,0 +1,72 @@
+.countryListPage {
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__header {
+        font-size: 48px;
+    }
+
+    &__list {
+        list-style: none;
+        width: 40%;
+        font-size: 24px;
+        height: 600px;
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 10px;
+        }
+
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        &::-webkit-scrollbar-button {
+            background: #ccc;
+            border-radius: 5px;
+        }
+
+        &::-webkit-scrollbar-button:single-button {
+            display: none;
+        }
+
+        &::-webkit-scrollbar-button:increment {
+            background: url('arrow-down.svg') no-repeat center center;
+            background-size: 20px 20px;
+        }
+
+        &::-webkit-scrollbar-button:decrement {
+            background: url('arrow-up.svg') no-repeat center center;
+            background-size: 20px 20px;
+        }
+
+        &--item {
+            padding: 4px 20px;
+
+            > a {
+                color: black;
+                text-decoration: none;
+            }
+
+            &:hover {
+                background-color: rgb(210, 210, 210);
+                padding: 4px;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.countryInfoPage {
+    &__container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+      align-items: start;
+      justify-items: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    &__header {
+      grid-column: span 2;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      h2 {
+        font-size: 32px;
+      }
+  
+      img {
+        width: 100px;
+        height: auto;
+      }
+    }
+  
+    &__borderCountries {
+      grid-column: 1 / 2;
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+  
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+  
+      li {
+        margin-bottom: 10px;
+        
+        a {
+          text-decoration: none;
+          color: #3498db;
+  
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  
+    &__populationChart {
+      grid-column: 2 / 3;
+      padding: 20px;
+      border-radius: 8px;
+      width: 100%;
+  
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  
